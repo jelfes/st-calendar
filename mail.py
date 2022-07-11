@@ -1,8 +1,9 @@
 import streamlit as st
-from yagmail import SMTP
+import yagmail
 
 send = st.button('Send!')
+
 if send:
-    conn = SMTP("taubenschlag.ensemble@gmail.com", oauth2_file="gmail-api-credentials/credentials.json")
-    conn.send(subject="Yellow!")
+    conn = yagmail.SMTP(st.secrets['username'], st.secrets['password'])
+    conn.send(to = 'taubenschlag.ensemble@gmail.com', subject="Yellow!")
     st.write('Done!')
