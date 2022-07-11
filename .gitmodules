@@ -1,0 +1,3 @@
+[submodule "gmail-api-credentials"]
+	path = gmail-api-credentials
+	url = keybase://private/jelfes/gmail-api-credentials
