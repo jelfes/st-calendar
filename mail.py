@@ -1,5 +1,3 @@
-st.write('Bitte haben sie einen Augeblick Geduld, ein:e Mitarbeiter:In ist gleich für Sie vefügbar!')
-
 import streamlit as st
 import yagmail
 
